@@ -55,8 +55,8 @@ projects[omega][subdir] = "contrib"
 projects[omega][version] = "3.1"
 projects[omega][type] = theme
 
-projects[abundance_theme][type] = theme
-projects[abundance_theme][download][type] = git
-projects[abundance_theme][download][url] = git@github.com:pmackay/abundance_theme.git
+; projects[abundance_theme][type] = theme
+; projects[abundance_theme][download][type] = git
+; projects[abundance_theme][download][url] = git@github.com:pmackay/abundance_theme.git
 
 
