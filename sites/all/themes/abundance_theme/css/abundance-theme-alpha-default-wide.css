@@ -1,0 +1,5 @@
+/* This file will hold styles that are loaded using the same media query as the wide grid. */
+/* line 3, ../sass/abundance-theme-alpha-default-wide.sass */
+#zone-user-wrapper {
+  background-color: blue;
+}
