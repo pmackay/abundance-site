@@ -1,7 +1,11 @@
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
 
+@import url(http://fonts.googleapis.com/css?family=IM+Fell+English)
+
 $color: white
+$linkColor: #3E7704
+$trimColor: #CEEDAF
 
 #page
     // background-color: $color
@@ -10,10 +14,12 @@ $color: white
     // background-color: $color
     #zone-user
         // background-color: $color
+        padding-top: 10px
         #region-user-first
             // background-color: #FFFFFF
         #region-user-second
             // background-color: #FFFFFF
+            float: right
             
 #zone-branding-wrapper
     // background-color: #FFFFFF
@@ -24,6 +30,16 @@ $color: white
 
 #zone-menu-wrapper
     // background-color: #FFFFFF 
+    margin-top: 10px
+    margin-bottom: 10px
+    #zone-menu
+        background-color: $trimColor
+        padding-top: 5px
+        padding-bottom: 5px
+        border-radius: 8px
+    ul.inline li
+        padding: 0 0
+        padding-right: 0.9em
     #region-menu
         // background-color: #FFFFFF
 
@@ -75,11 +91,89 @@ $color: white
         #region-postscript-fourth
             // background-color: #FFFFFF
 
-#zone-footer-wrapper
+#zone-footer
+    margin-top: 20px
+    margin-bottom: 20px
+    border-top: 2px #CEEDAF solid
+    padding-top: 10px
     // background-color: #FFFFFF
-    #zone-footer
+    #region-footer-first
         // background-color: #FFFFFF
-        #region-footer-first
-            // background-color: #FFFFFF
-        #region-footer-second
-            // background-color: #FFFFFF
+    #region-footer-second
+        // background-color: #FFFFFF
+        float: right
+
+h1, h2, h3, h4, h5, h6
+    font-family: 'IM Fell English'
+    font-weight: normal
+    color: $linkColor
+    letter-spacing: -0.03em
+    margin-bottom: 0px
+    
+p
+    margin-bottom: 6px
+    
+    
+// .logo-img * img
+//     width: 70%
+//     height: 70%
+
+#main-menu
+    font-family: 'IM Fell English'
+    font-size: 13pt
+    
+    
+#block-search-form
+    padding-left: 10px
+    float: right
+    
+.block-user-login, .block-logintoboggan
+    float: right
+    
+a:link, a:visited
+    color: $linkColor
+    text-decoration: none
+
+// Admin menu
+#admin-menu
+    font-size: 9pt
+    
+.front .title
+    display: none
+    
+.panel-col-first
+    width: 20%
+    
+.panels-flexible-region-1-center
+    margin-left: auto
+    margin-right: auto
+    
+// .panels-flexible-column-1-main, .panels-flexible-column-1-3
+//     border-right: 5px dotted $trimColor
+    // border-right-style: dotted solid 3px
+    
+    
+// Map
+
+.openlayers-tooltip-name
+    a:link, a:visited
+        color: $trimColor
+
+// Articles
+
+.view-article * img
+    float: left  
+    margin-bottom: 10px
+    margin-right: 20px
+    margin-top: 5px
+    box-shadow: 3px 3px 4px #888
+    
+    
+.node-article * img
+    float: right  
+    margin-bottom: 10px
+    margin-left: 20px
+    margin-top: 5px
+    box-shadow: 3px 3px 4px #888
+    
+    

@@ -1,2 +1,122 @@
+@import url(http://fonts.googleapis.com/css?family=IM+Fell+English);
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+/* line 15, ../sass/global.sass */
+#zone-user-wrapper #zone-user {
+  padding-top: 10px;
+}
+/* line 20, ../sass/global.sass */
+#zone-user-wrapper #zone-user #region-user-second {
+  float: right;
+}
+
+/* line 31, ../sass/global.sass */
+#zone-menu-wrapper {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 35, ../sass/global.sass */
+#zone-menu-wrapper #zone-menu {
+  background-color: #ceedaf;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 8px;
+}
+/* line 40, ../sass/global.sass */
+#zone-menu-wrapper ul.inline li {
+  padding: 0 0;
+  padding-right: 0.9em;
+}
+
+/* line 94, ../sass/global.sass */
+#zone-footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 2px #ceedaf solid;
+  padding-top: 10px;
+}
+/* line 102, ../sass/global.sass */
+#zone-footer #region-footer-second {
+  float: right;
+}
+
+/* line 106, ../sass/global.sass */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "IM Fell English";
+  font-weight: normal;
+  color: #3e7704;
+  letter-spacing: -0.03em;
+  margin-bottom: 0px;
+}
+
+/* line 113, ../sass/global.sass */
+p {
+  margin-bottom: 6px;
+}
+
+/* line 121, ../sass/global.sass */
+#main-menu {
+  font-family: "IM Fell English";
+  font-size: 13pt;
+}
+
+/* line 126, ../sass/global.sass */
+#block-search-form {
+  padding-left: 10px;
+  float: right;
+}
+
+/* line 130, ../sass/global.sass */
+.block-user-login, .block-logintoboggan {
+  float: right;
+}
+
+/* line 133, ../sass/global.sass */
+a:link, a:visited {
+  color: #3e7704;
+  text-decoration: none;
+}
+
+/* line 138, ../sass/global.sass */
+#admin-menu {
+  font-size: 9pt;
+}
+
+/* line 141, ../sass/global.sass */
+.front .title {
+  display: none;
+}
+
+/* line 144, ../sass/global.sass */
+.panel-col-first {
+  width: 20%;
+}
+
+/* line 147, ../sass/global.sass */
+.panels-flexible-region-1-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 159, ../sass/global.sass */
+.openlayers-tooltip-name a:link, .openlayers-tooltip-name a:visited {
+  color: #ceedaf;
+}
+
+/* line 164, ../sass/global.sass */
+.view-article * img {
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  margin-top: 5px;
+  box-shadow: 3px 3px 4px #888888;
+}
+
+/* line 172, ../sass/global.sass */
+.node-article * img {
+  float: right;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-top: 5px;
+  box-shadow: 3px 3px 4px #888888;
+}
