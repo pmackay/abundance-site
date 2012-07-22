@@ -134,3 +134,14 @@ region-branding #block-block-3 {
 .view-abundance-groups .country {
   display: none;
 }
+
+/* line 190, ../sass/global.sass */
+.node-abundance-group * .field {
+  margin-bottom: 10px;
+}
+
+/* line 193, ../sass/global.sass */
+.node-abundance-group * .field-label {
+  float: left;
+  margin-right: 5px;
+}
