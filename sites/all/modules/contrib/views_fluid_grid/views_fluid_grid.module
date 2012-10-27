@@ -24,8 +24,8 @@ function views_fluid_grid_init() {
   // So, let's make sure our stylesheets are loaded in Views UI.
   if (strpos($_GET['q'], 'admin/build/views/edit/') === 0) {
     $module_path = drupal_get_path('module', 'views_fluid_grid');
-    drupal_add_css($module_path .'/css/views_fluid_grid.base.css');
-    drupal_add_css($module_path .'/css/views_fluid_grid.size.css');
-    drupal_add_css($module_path .'/css/views_fluid_grid.advanced.css');
+    // drupal_add_css($module_path .'/css/views_fluid_grid.base.css');
+    // drupal_add_css($module_path .'/css/views_fluid_grid.size.css');
+    // drupal_add_css($module_path .'/css/views_fluid_grid.advanced.css');
   }
 }

@@ -26,7 +26,7 @@ function template_preprocess_views_fluid_grid_plugin_style(&$vars) {
   // Items size.
   if (!empty($options['items_width']) || !empty($options['items_height'])) {
     // Send size related stylesheets to the page.
-    drupal_add_css($module_path .'/css/views_fluid_grid.size.css');
+    // drupal_add_css($module_path .'/css/views_fluid_grid.size.css');
 
     if (!empty($options['items_width'])) {
       $vars['list_class'] .= ' views-fluid-grid-items-width-'. $options['items_width'];
