@@ -4,7 +4,7 @@
 @import url(http://fonts.googleapis.com/css?family=IM+Fell+English)
 
 $color: white
-$linkColor: #3E7704
+$linkColor: #000000
 $trimColor: #CEEDAF
 
 #page
@@ -20,7 +20,7 @@ $trimColor: #CEEDAF
         #region-user-second
             // background-color: #FFFFFF
             float: right
-            
+
 #zone-branding-wrapper
     // background-color: #FFFFFF
     #zone-branding
@@ -29,17 +29,18 @@ $trimColor: #CEEDAF
             // background-color: #FFFFFF
 
 #zone-menu-wrapper
-    // background-color: #FFFFFF 
+    // background-color: #FFFFFF
     margin-top: 10px
     margin-bottom: 10px
     #zone-menu
-        background-color: $trimColor
-        padding-top: 5px
-        padding-bottom: 5px
-        border-radius: 8px
-    ul.inline li
-        padding: 0 0
-        padding-right: 0.9em
+        // background-color: $trimColor
+        //         padding-top: 5px
+        //         padding-bottom: 5px
+        //         border-radius: 8px
+        border-bottom: 4px #CEEDAF solid
+    // ul.inline li
+        // padding: 0 0
+        // padding-right: 0.9em
     #region-menu
         // background-color: #FFFFFF
 
@@ -50,7 +51,7 @@ $trimColor: #CEEDAF
         // background-color: #FFFFFF
         #region-header-first
             // background-color: #FFFFFF
-        #region-header-second 
+        #region-header-second
             // background-color: #FFFFFF
 
 #zone-preface-wrapper
@@ -94,7 +95,7 @@ $trimColor: #CEEDAF
 #zone-footer
     margin-top: 20px
     margin-bottom: 20px
-    border-top: 2px #CEEDAF solid
+    border-top: 4px #CEEDAF solid
     padding-top: 10px
     // background-color: #FFFFFF
     #region-footer-first
@@ -104,32 +105,52 @@ $trimColor: #CEEDAF
         float: right
 
 h1, h2, h3, h4, h5, h6
-    font-family: 'IM Fell English'
+    font-family: 'Trebuchet MS'
     font-weight: normal
     color: $linkColor
     letter-spacing: -0.03em
     margin-bottom: 0px
-    
+
 p
     margin-bottom: 6px
-    
-    
+
+
 // .logo-img * img
 //     width: 70%
 //     height: 70%
 
+
+// Menus
+
 #main-menu
-    font-family: 'IM Fell English'
+    font-family: 'Trebuchet MS'
     font-size: 13pt
     
-    
+    li.active
+        background-color: #CEEDAF
+
+#block-system-navigation
+    float: right
+    border-right: 1px solid #000
+    margin: 0px 10px
+    padding: 0px 10px
+
+#block-system-navigation li.collapsed
+    list-style-image: none
+    list-style-type: none
+
+#block-system-navigation li
+    padding: 0
+
+
+
 #block-search-form
     padding-left: 10px
     float: right
-    
+
 .block-user-login, .block-logintoboggan
     float: right
-    
+
 a:link, a:visited
     color: $linkColor
     text-decoration: none
@@ -137,29 +158,29 @@ a:link, a:visited
 // Admin menu
 #admin-menu
     font-size: 9pt
-    
+
 .front .title
     display: none
-    
+
 .panel-col-first
     width: 20%
-    
+
 .panels-flexible-region-1-center
     margin-left: auto
     margin-right: auto
-    
+
 // .panels-flexible-column-1-main, .panels-flexible-column-1-3
 //     border-right: 5px dotted $trimColor
     // border-right-style: dotted solid 3px
-    
-    
+
+
 region-branding
     .branding-data, #block-block-3, .alpha-debug-block
         display: inline
     #block-block-3
         align: right
-    
-    
+
+
 // Map
 
 .openlayers-tooltip-name
@@ -169,30 +190,81 @@ region-branding
 // Articles
 
 .view-article * img
-    float: left  
+    float: left
     margin-bottom: 10px
     margin-right: 20px
     margin-top: 5px
     box-shadow: 3px 3px 4px #888
-    
-    
+
+
 .node-article * img
-    float: right  
+    float: right
     margin-bottom: 10px
     margin-left: 20px
     margin-top: 5px
     box-shadow: 3px 3px 4px #888
-    
+
 .view-abundance-groups
     .country
         display: none
-    
+
 .node-abundance-group * .field
     margin-bottom: 10px
-    
+
 .node-abundance-group * .field-label
     float: left
     margin-right: 5px
 
 
-    
+// Tags
+
+.field-name-field-tags, .field-name-field-categories
+    padding-top: 10px
+
+.field-name-field-tags * .field-item
+    border-left: 1px solid #000
+    padding: 0px 10px
+
+.field-name-field-tags > .field-items > .field-item:first-child
+    border-left: none
+    // padding: 0px 10px
+
+
+// Frontpage
+
+body.front
+    .views-fluid-grid-item
+        width: 163px
+        padding-right: 30px
+        padding-bottom: 21px
+    .views-row-last
+        padding-right: 0px
+
+    .views-fluid-grid-item
+        .views-field-body
+            height: 163px
+
+    .views-fluid-grid-item .views-field-field-link a:link
+        font-family: Arial, Helvetica, sans-serif
+        font-size:  11pt
+        font-weight: bold
+        color: #000000
+
+    #block-block-4
+        display: none
+
+    .view-frontpage-items-extras
+        .views-fluid-grid-item
+            padding: 0px
+            padding-right: 30px
+            padding-bottom: 21px
+        .views-row-last
+            padding-right: 0px
+
+
+
+// #region-sidebar-first .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16
+//     margin-left: 0px
+//     margin-right: 0px
+
+

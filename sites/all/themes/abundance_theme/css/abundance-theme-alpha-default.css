@@ -1,1 +1,23 @@
 /* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
+/* line 5, ../sass/abundance-theme-alpha-default.sass */
+body.front #region-sidebar-first {
+  width: 400px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+/* line 10, ../sass/abundance-theme-alpha-default.sass */
+body.front #region-sidebar-second {
+  width: 560px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+/* line 15, ../sass/abundance-theme-alpha-default.sass */
+body.front #block-block-4 {
+  display: block;
+  padding-bottom: 39px;
+}
+
+/* line 22, ../sass/abundance-theme-alpha-default.sass */
+body.page-map .region-content {
+  width: 950px;
+}
