@@ -1,14 +1,22 @@
+; Core version
+; ------------
 
-api = 2
 core = 7.x
 
-; Core
+; API version
+; ------------
+api = 2
+
+; Core project
+; ------------
 
 projects[drupal][type] = "core"
 projects[drupal][version] = "7.12"
 
 
 ; Sub-makefiles
+; ------------
+
 includes[debut] = "http://drupalcode.org/project/debut.git/blob_plain/refs/heads/7.x-1.x:/debut.make.inc"
 includes[debut_article] = "http://drupalcode.org/project/debut_article.git/blob_plain/refs/heads/7.x-1.x:/debut_article.make.inc"
 ; includes[debut_bio] = "http://drupalcode.org/project/debut_bio.git/blob_plain/refs/heads/7.x-1.x:/debut_bio.make.inc"
@@ -26,6 +34,7 @@ includes[debut_wysiwyg] = "http://drupalcode.org/project/debut_wysiwyg.git/blob_
 
 
 ; Modules
+; ------------
 
 projects[admin_menu][subdir] = "contrib"
 projects[admin_menu][version] = "3.0-rc2"
@@ -40,13 +49,14 @@ projects[features_override][subdir] = "contrib"
 projects[features_override][version] = "2.0-alpha1"
 
 ; Themes
+; ------------
 
 projects[omega][subdir] = "contrib"
 projects[omega][version] = "3.1"
 projects[omega][type] = theme
 
-projects[abundance_theme][type] = theme
-projects[abundance_theme][download][type] = git
-projects[abundance_theme][download][url] = git@github.com:pmackay/abundance_theme.git
+; projects[abundance_theme][type] = theme
+; projects[abundance_theme][download][type] = git
+; projects[abundance_theme][download][url] = git@github.com:pmackay/abundance_theme.git
 
 
